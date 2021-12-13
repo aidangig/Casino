@@ -64,15 +64,15 @@
 						w = window.innerWidth;
 						h = window.innerHeight;
 
-						var r = 480 / 640;
+						var r = 600 / 960;
 
 						if (w * r > window.innerHeight) {
 							w = Math.min(w, Math.ceil(h / r));
 						}
 						h = Math.floor(w * r);
 					} else {
-						w = 640;
-						h = 480;
+						w = 960;
+						h = 600;
 					}
 
 					container.style.width = canvas.style.width = w + "px";
